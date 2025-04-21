@@ -1,5 +1,5 @@
 {
-  "name": "@PeteFromGlasgow/typescript-cli-template-cli",
+  "name": "@petefromglasgow/curriculum-vitae-cli",
   "version": "1.0.1",
   "description": "",
   "main": "dist/cli.js",
@@ -13,9 +13,10 @@
     "ts-cli": "dist/cli.js"
   },
   "dependencies": {
-    "@PeteFromGlasgow/typescript-cli-template-core": "workspace:*",
+    "@petefromglasgow/curriculum-vitae-core": "workspace:*",
     "commander": "^13.1.0"
   },
+  "repository": "https://github.com/PeteFromGlasgow/curriculum-vitae.git",
   "author": "Peter Kinnaird <peter@kinnaird.scot>",
   "license": "ISC",
   "publishConfig": {

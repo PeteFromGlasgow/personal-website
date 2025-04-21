@@ -1,5 +1,5 @@
 {
-  "name": "@typescript-cli-template/root",
+  "name": "@curriculum-vitae/root",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -26,6 +26,7 @@
     "@changesets/cli": "^2.29.1",
     "@eslint/js": "^9.22.0",
     "@stylistic/eslint-plugin": "^4.2.0",
+    "@vitejs/plugin-vue": "^5.2.3",
     "eslint": "^9.22.0",
     "globals": "^16.0.0",
     "husky": "^9.1.7",
