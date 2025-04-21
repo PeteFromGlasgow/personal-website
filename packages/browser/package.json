@@ -1,0 +1,30 @@
+{
+  "name": "@PeteFromGlasgow/typescript-cli-template-browser",
+  "version": "1.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint",
+    "test": "vitest --run --browser=chromium"
+  },
+  "author": "Peter Kinnaird <peter@kinnaird.scot>",
+  "license": "ISC",
+  "description": "Core typescript-cli-template library",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "packageManager": "pnpm@10.7.1",
+  "devDependencies": {
+    "@PeteFromGlasgow/typescript-cli-template-core": "workspace:*",
+    "@vitest/browser": "^3.1.1",
+    "playwright": "^1.51.1",
+    "vite": "^6.2.5",
+    "vitest": "^3.1.1"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  }
+}

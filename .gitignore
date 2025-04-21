@@ -1,0 +1,5 @@
+node_modules/
+coverage/
+.aider*
+docs/.vitepress/dist
+docs/.vitepress/cache
