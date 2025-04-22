@@ -3,7 +3,7 @@ import pluginJs from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import stylistic from '@stylistic/eslint-plugin'
 export default [
-  { ignores: ['**/dist/**/*', 'packages/browser/browser/**/*'] },
+  { ignores: ['**/dist/**/*', 'packages/browser/browser/**/*', 'packages/frontend/.astro/**/*'] },
   { files: ['**/*.{js,mjs,cjs,ts}'] },
   { languageOptions: { globals: globals.node } },
   pluginJs.configs.recommended,

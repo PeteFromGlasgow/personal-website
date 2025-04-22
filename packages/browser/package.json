@@ -1,5 +1,5 @@
 {
-  "name": "@petefromglasgow/curriculum-vitae-web",
+  "name": "@petefromglasgow/personal-website-frontend",
   "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
@@ -11,15 +11,15 @@
     "test": "vitest --run --browser=chromium"
   },
   "author": "Peter Kinnaird <peter@kinnaird.scot>",
-  "repository": "https://github.com/PeteFromGlasgow/curriculum-vitae.git",
+  "repository": "https://github.com/PeteFromGlasgow/personal-site.git",
   "license": "ISC",
-  "description": "Core typescript-cli-template library",
+  "description": "The frontend of the site - uses vue",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "packageManager": "pnpm@10.7.1",
   "devDependencies": {
-    "@petefromglasgow/curriculum-vitae-core": "workspace:*",
+    "@petefromglasgow/personal-website-core": "workspace:*",
     "@vitest/browser": "^3.1.1",
     "playwright": "^1.51.1",
     "vite": "^6.2.5",

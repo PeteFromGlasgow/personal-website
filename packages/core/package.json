@@ -1,5 +1,5 @@
 {
-  "name": "@petefromglasgow/curriculum-vitae-core",
+  "name": "@petefromglasgow/personal-website-core",
   "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
@@ -11,7 +11,7 @@
     "coverage": "vitest --run --coverage"
   },
   "author": "Peter Kinnaird <peter@kinnaird.scot>",
-  "repository": "https://github.com/PeteFromGlasgow/curriculum-vitae.git",
+  "repository": "https://github.com/PeteFromGlasgow/personal-website.git",
   "license": "ISC",
   "description": "Core typescript-cli-template library",
   "publishConfig": {

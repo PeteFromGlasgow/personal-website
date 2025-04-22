@@ -1,5 +1,5 @@
 {
-  "name": "@petefromglasgow/curriculum-vitae-cli",
+  "name": "@petefromglasgow/personal-website-cli",
   "version": "1.0.1",
   "description": "",
   "main": "dist/cli.js",
@@ -13,10 +13,10 @@
     "ts-cli": "dist/cli.js"
   },
   "dependencies": {
-    "@petefromglasgow/curriculum-vitae-core": "workspace:*",
+    "@petefromglasgow/personal-website-core": "workspace:*",
     "commander": "^13.1.0"
   },
-  "repository": "https://github.com/PeteFromGlasgow/curriculum-vitae.git",
+  "repository": "https://github.com/PeteFromGlasgow/personal-website.git",
   "author": "Peter Kinnaird <peter@kinnaird.scot>",
   "license": "ISC",
   "publishConfig": {
