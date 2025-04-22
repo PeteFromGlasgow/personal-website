@@ -1,8 +1,8 @@
 {
   "name": "@petefromglasgow/personal-website-core",
   "version": "0.0.1",
-  "main": "dist/index.js",
-  "types": "dist/index.d.js",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.js",
   "type": "module",
   "scripts": {
     "build": "tsc -p .",
