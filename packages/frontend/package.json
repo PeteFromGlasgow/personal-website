@@ -1,5 +1,5 @@
 {
-  "name": "@petefromglasgow/personal-website-frontend",
+  "name": "@peterfromglasgow/personal-website-frontend",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -8,18 +8,23 @@
     "preview": "astro preview",
     "astro": "astro"
   },
-  "repository": "https://github.com/PeteFromGlasgow/personal-website.git",
-  "author": "Peter Kinnaird <peter@kinnaird.scot>",
-  "license": "ISC",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "dependencies": {
-    "@astrojs/sitemap": "^3.3.0",
-    "@astrojs/vue": "^5.0.10",
+    "@astrojs/mdx": "^4.2.5",
+    "@astrojs/vue": "^5.0.11",
     "@tailwindcss/vite": "^4.1.4",
-    "astro": "^5.7.4",
+    "@types/canvas-confetti": "^1.9.0",
+    "astro": "^5.7.5",
+    "canvas-confetti": "^1.9.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-vue-next": "^0.503.0",
+    "reka-ui": "^2.2.0",
+    "tailwind-merge": "^3.2.0",
     "tailwindcss": "^4.1.4",
+    "tw-animate-css": "^1.2.8",
     "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3"
   }
 }
