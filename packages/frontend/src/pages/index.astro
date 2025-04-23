@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 import { Button } from '@/components/ui/button';
+import Navigation from '@/components/Navigation.vue'
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 ---
 
 <html lang="en">
@@ -13,9 +15,13 @@ import { Button } from '@/components/ui/button';
 	</head>
 
 	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>ShadCN-UI Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
+		<div class="flex flex-row h-screen">
+				<div class="h-screen flex-none">
+						<Navigation client:load />
+				</div>
+				<div class="flex-1 p-0 m-0">
+				<span>I need a hero</span>
+				</div>
 		</div>
 	</body>
 </html>
