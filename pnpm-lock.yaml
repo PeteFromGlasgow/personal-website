@@ -140,9 +140,6 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
-      lucide-vue-next:
-        specifier: ^0.503.0
-        version: 0.503.0(vue@3.5.13(typescript@5.8.2))
       reka-ui:
         specifier: ^2.2.0
         version: 2.2.0(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2))
@@ -162,6 +159,9 @@ importers:
       '@vitejs/plugin-vue':
         specifier: ^5.2.3
         version: 5.2.3(vite@6.3.2(jiti@2.4.2)(lightningcss@1.29.2)(tsx@4.19.3))(vue@3.5.13(typescript@5.8.2))
+      lucide-vue-next:
+        specifier: ^0.503.0
+        version: 0.503.0(vue@3.5.13(typescript@5.8.2))
 
 packages:
 

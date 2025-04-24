@@ -3,6 +3,7 @@ import '../styles/global.css';
 import { Button } from '@/components/ui/button';
 import Navigation from '@/components/Navigation.vue'
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+import { Image } from 'astro:assets'
 ---
 
 <html lang="en">
@@ -17,7 +18,9 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 	<body>
 		<div class="flex flex-row h-screen">
 				<div class="h-screen flex-none">
-						<Navigation client:load />
+					<Navigation client:load>
+                                        	<Image slot="logo" width="40" height="40" src="https://gravatar.com/avatar/af209d37d6bc17d6e3f3b2210f3e24da96afcd2eb3617a315eea641e9e9cc09c" alt="Peter Kinnaird Logo" loading="eager"/>
+					</Navigation>
 				</div>
 				<div class="flex-1 p-0 m-0">
 				</div>

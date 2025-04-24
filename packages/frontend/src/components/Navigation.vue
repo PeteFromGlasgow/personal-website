@@ -1,16 +1,17 @@
-<script lang="ts" setup>
-import {
-  Sidebar,
-  SidebarContent,
-  SidebarFooter,
-  SidebarGroup,
-  SidebarGroupLabel,
-  SidebarHeader,
-  SidebarMenuItem,
-  SidebarMenuButton,
-  SidebarProvider,
-  SidebarTrigger
-} from '@/components/ui/sidebar'
+<script lang='ts' setup>
+  import {
+    Sidebar,
+    SidebarContent,
+    SidebarFooter,
+    SidebarGroup,
+    SidebarGroupLabel,
+    SidebarHeader,
+    SidebarMenuItem,
+    SidebarMenuButton,
+    SidebarProvider,
+    SidebarTrigger
+  } from '@/components/ui/sidebar'
+  import { CircleUserRound, FileUser } from 'lucide-vue-next'
 </script>
 <template>
 <div>
@@ -18,8 +19,8 @@ import {
 <Sidebar>
   <SidebarHeader>
     <div class='flex flex-row'>
-      <div>
-        <img class='w-10 h-10 flex-1 rounded-sm' src="https://gravatar.com/avatar/af209d37d6bc17d6e3f3b2210f3e24da96afcd2eb3617a315eea641e9e9cc09c" alt="Peter Kinnaird Logo" />
+      <div class='flex-1 rounded-sm'>
+	 <slot name="logo"></slot>
       </div>
       <div class='content-center m-2'>
         Kinnaird.scot
@@ -33,15 +34,15 @@ import {
         <SidebarMenuItem>
           <SidebarMenuButton asChild>
               <a href="/profile">
-              <span>Profile</span>
-            </a>
+		<CircleUserRound /> Profile
+              </a>
           </SidebarMenuButton>
         </SidebarMenuItem>
         <SidebarMenuItem>
           <SidebarMenuButton asChild>
               <a href="/curriculum-vitie">
-              <span>Curriculum Vitie</span>
-            </a>
+		<FileUser /> Curriculum Vitie
+              </a>
           </SidebarMenuButton>
         </SidebarMenuItem>
       </SidebarGroupContent>
