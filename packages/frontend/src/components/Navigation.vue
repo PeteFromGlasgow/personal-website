@@ -48,7 +48,11 @@
       <SidebarGroupLabel>Content</SidebarGroupLabel>
     </SidebarGroup>
   </SidebarContent>
-  <SidebarFooter class='content-center'>Made with love in 🏴󠁧󠁢󠁳󠁣󠁴󠁿</SidebarFooter>
+  <SidebarFooter>
+    <SidebarMenuButton class="justify-center w-full">
+      Made with love in 🏴󠁧󠁢󠁳󠁣󠁴󠁿
+    </SidebarMenuButton>
+  </SidebarFooter>
 </Sidebar>
 <SidebarTrigger></SidebarTrigger>
 </SidebarProvider>
