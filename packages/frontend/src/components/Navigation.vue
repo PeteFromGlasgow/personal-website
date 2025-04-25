@@ -11,6 +11,7 @@
     SidebarProvider,
     SidebarTrigger
   } from '@/components/ui/sidebar'
+
   import { CircleUserRound, FileUser } from 'lucide-vue-next'
 </script>
 <template>
