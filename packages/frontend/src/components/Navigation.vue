@@ -17,7 +17,7 @@
 <template>
 <div>
 <SidebarProvider>
-<Sidebar>
+<Sidebar collapsible='icon'>
   <SidebarHeader>
     <div class='flex flex-row'>
       <div class='flex-1 rounded-sm'>
