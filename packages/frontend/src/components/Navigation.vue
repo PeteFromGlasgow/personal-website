@@ -19,14 +19,10 @@
 <SidebarProvider>
 <Sidebar collapsible='icon'>
   <SidebarHeader>
-    <div class='flex flex-row'>
-      <div class='flex-1 rounded-sm'>
-	 <slot name="logo"></slot>
-      </div>
-      <div class='content-center m-2'>
-        Kinnaird.scot
-      </div>
-    </div>
+    <SidebarMenuButton as="a" href="/" class="justify-start">
+      <slot name="logo"></slot>
+      <span class="ml-2">Kinnaird.scot</span>
+    </SidebarMenuButton>
   </SidebarHeader>
   <SidebarContent>
     <SidebarGroup>
