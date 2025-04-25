@@ -20,7 +20,9 @@
 <Sidebar collapsible='icon'>
   <SidebarHeader>
     <SidebarMenuButton as="a" href="/" class="justify-start">
-      <slot name="logo"></slot>
+      <div class="w-6 h-6 flex items-center justify-center"> <!-- Wrapper div -->
+        <slot name="logo"></slot>
+      </div>
       <span class="ml-2">Kinnaird.scot</span>
     </SidebarMenuButton>
   </SidebarHeader>
