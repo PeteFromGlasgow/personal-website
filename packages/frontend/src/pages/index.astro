@@ -23,7 +23,7 @@ import { Image } from 'astro:assets'
 					</Navigation>
 				</div>
 				<div class="flex-1 p-0 m-0 relative">
-					<canvas id="webgl-canvas" class="absolute inset-0 w-full h-full"></canvas>
+					<canvas id="webgl-canvas" class="rotate-1 absolute inset-0 w-screen h-96 -left-2"></canvas>
 					<h1 class="relative z-10 p-4">Peter Kinnaird</h1>  <!-- Added relative positioning and padding to h1 -->
 				</div>
 		</div>
@@ -46,7 +46,7 @@ import { Image } from 'astro:assets'
 				// Fragment shader program
 				const fsSource = `
 					void main(void) {
-						gl_FragColor = vec4(0.1, 0.2, 0.3, 1.0); // Example color (dark blueish)
+						gl_FragColor = vec4(0.5, 0.5, 0.3, 1.0); 
 					}
 				`;
 
