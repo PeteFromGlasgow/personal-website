@@ -50,14 +50,28 @@ import { Image } from 'astro:assets'
 					uniform vec2 u_resolution;
 					uniform float u_time;
 
+					// Simple pseudo-random function (hash)
+					float random (vec2 st) {
+						return fract(sin(dot(st.xy, vec2(12.9898,78.233))) * 43758.5453123);
+					}
+
 					void main(void) {
 						vec2 st = gl_FragCoord.xy / u_resolution.xy; // Normalized coordinates (0.0 to 1.0)
 						float time = u_time * 0.001; // Convert time from ms to seconds
 
-						// Simple color cycling based on time and position
-						float r = 0.5 + 0.5 * cos(time + st.x * 3.14);
-						float g = 0.5 + 0.5 * sin(time + st.y * 3.14);
-						float b = 0.5 + 0.5 * cos(time + (st.x + st.y) * 1.57);
+						// Base color cycling
+						float r_base = 0.5 + 0.5 * cos(time + st.x * 3.14);
+						float g_base = 0.5 + 0.5 * sin(time + st.y * 3.14);
+						float b_base = 0.5 + 0.5 * cos(time + (st.x + st.y) * 1.57);
+
+						// Generate noise based on position and time
+						float noise = random(st + vec2(time * 0.1, time * 0.05)); // Add time to make noise dynamic
+
+						// Add noise to the base color (adjust multiplier for noise intensity)
+						float noise_intensity = 0.15;
+						float r = r_base + (noise - 0.5) * noise_intensity;
+						float g = g_base + (noise - 0.5) * noise_intensity;
+						float b = b_base + (noise - 0.5) * noise_intensity;
 
 						gl_FragColor = vec4(r, g, b, 1.0);
 					}
