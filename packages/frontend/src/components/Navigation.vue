@@ -49,15 +49,11 @@
       <SidebarGroupLabel>Content</SidebarGroupLabel>
     </SidebarGroup>
   </SidebarContent>
-  <SidebarFooter>
-  <SidebarMenuItem>
-    <SidebarMenuButton asChild>
-	<SidebarTrigger></SidebarTrigger>
-    </SidebarMenuButton>
-  </SidebarMenuItem>
-    <SidebarMenuButton class="justify-center w-full">
+  <SidebarFooter class="flex flex-col gap-2 p-2 border-t">
+    <SidebarTrigger class="self-center size-8" />
+    <div class="text-xs text-center text-muted-foreground">
       Made with love in 🏴󠁧󠁢󠁳󠁣󠁴󠁿
-    </SidebarMenuButton>
+    </div>
   </SidebarFooter>
 </Sidebar>
 
