@@ -49,11 +49,8 @@
       <SidebarGroupLabel>Content</SidebarGroupLabel>
     </SidebarGroup>
   </SidebarContent>
-  <SidebarFooter class="flex flex-col gap-2 p-2 border-t">
-    <SidebarTrigger class="self-center size-8" />
-    <div class="text-xs text-center text-muted-foreground">
-      Made with love in 🏴󠁧󠁢󠁳󠁣󠁴󠁿
-    </div>
+  <SidebarFooter class="flex flex-col gap-3 p-3">
+    <SidebarTrigger class="size-6" />
   </SidebarFooter>
 </Sidebar>
 
