@@ -45,8 +45,21 @@ import { Image } from 'astro:assets'
 
 				// Fragment shader program
 				const fsSource = `
+					precision mediump float; // Necessary for WebGL 1
+
+					uniform vec2 u_resolution;
+					uniform float u_time;
+
 					void main(void) {
-						gl_FragColor = vec4(0.5, 0.5, 0.3, 1.0); 
+						vec2 st = gl_FragCoord.xy / u_resolution.xy; // Normalized coordinates (0.0 to 1.0)
+						float time = u_time * 0.001; // Convert time from ms to seconds
+
+						// Simple color cycling based on time and position
+						float r = 0.5 + 0.5 * cos(time + st.x * 3.14);
+						float g = 0.5 + 0.5 * sin(time + st.y * 3.14);
+						float b = 0.5 + 0.5 * cos(time + (st.x + st.y) * 1.57);
+
+						gl_FragColor = vec4(r, g, b, 1.0);
 					}
 				`;
 
@@ -83,6 +96,10 @@ import { Image } from 'astro:assets'
 					attribLocations: {
 						vertexPosition: gl.getAttribLocation(shaderProgram, 'aVertexPosition'),
 					},
+					uniformLocations: {
+						resolution: gl.getUniformLocation(shaderProgram, 'u_resolution'),
+						time: gl.getUniformLocation(shaderProgram, 'u_time'),
+					},
 				};
 
 				// Create buffer for a rectangle covering the canvas
@@ -96,43 +113,63 @@ import { Image } from 'astro:assets'
 				];
 				gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(positions), gl.STATIC_DRAW);
 
-				// --- Drawing ---
-				// Set canvas size (important for resolution)
-				canvas.width = canvas.clientWidth;
-				canvas.height = canvas.clientHeight;
-				gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
+				// --- Animation Loop ---
+				let startTime = performance.now();
 
-				// Clear the canvas
-				gl.clearColor(0.0, 0.0, 0.0, 0.0); // Clear to transparent black initially
-				gl.clear(gl.COLOR_BUFFER_BIT);
+				function render(currentTime) {
+					const elapsedTime = currentTime - startTime;
 
-				// Tell WebGL how to pull out the positions from the position buffer
-				{
-					const numComponents = 2; // pull out 2 values per iteration
-					const type = gl.FLOAT; // the data in the buffer is 32bit floats
-					const normalize = false; // don't normalize
-					const stride = 0; // how many bytes to get from one set of values to the next
-					const offset = 0; // how many bytes inside the buffer to start from
-					gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
-					gl.vertexAttribPointer(
-						programInfo.attribLocations.vertexPosition,
-						numComponents,
-						type,
-						normalize,
-						stride,
-						offset);
-					gl.enableVertexAttribArray(programInfo.attribLocations.vertexPosition);
+					// Resize canvas if needed (optional, but good practice)
+					const displayWidth  = canvas.clientWidth;
+					const displayHeight = canvas.clientHeight;
+					if (canvas.width !== displayWidth || canvas.height !== displayHeight) {
+						canvas.width = displayWidth;
+						canvas.height = displayHeight;
+						gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
+					}
+
+					// Clear the canvas
+					gl.clearColor(0.0, 0.0, 0.0, 0.0); // Clear to transparent black
+					gl.clear(gl.COLOR_BUFFER_BIT);
+
+					// Tell WebGL how to pull out the positions from the position buffer
+					{
+						const numComponents = 2;
+						const type = gl.FLOAT;
+						const normalize = false;
+						const stride = 0;
+						const offset = 0;
+						gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+						gl.vertexAttribPointer(
+							programInfo.attribLocations.vertexPosition,
+							numComponents,
+							type,
+							normalize,
+							stride,
+							offset);
+						gl.enableVertexAttribArray(programInfo.attribLocations.vertexPosition);
+					}
+
+					// Tell WebGL to use our program
+					gl.useProgram(programInfo.program);
+
+					// Set the shader uniforms
+					gl.uniform2f(programInfo.uniformLocations.resolution, gl.canvas.width, gl.canvas.height);
+					gl.uniform1f(programInfo.uniformLocations.time, elapsedTime);
+
+					// Draw the rectangle
+					{
+						const offset = 0;
+						const vertexCount = 4;
+						gl.drawArrays(gl.TRIANGLE_STRIP, offset, vertexCount);
+					}
+
+					// Request the next frame
+					requestAnimationFrame(render);
 				}
 
-				// Tell WebGL to use our program
-				gl.useProgram(programInfo.program);
-
-				// Draw the rectangle
-				{
-					const offset = 0;
-					const vertexCount = 4;
-					gl.drawArrays(gl.TRIANGLE_STRIP, offset, vertexCount);
-				}
+				// Start the animation
+				requestAnimationFrame(render);
 			}
 		</script>
 	</body>
