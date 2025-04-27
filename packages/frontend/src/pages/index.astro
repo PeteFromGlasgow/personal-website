@@ -59,25 +59,27 @@ import { Image } from 'astro:assets'
 						// --- Sine Wave Calculation ---
 						float wave_frequency = 4.0;   // How many waves vertically
 						float wave_amplitude = 0.15;  // How wide the wave swings horizontally
-						float wave_speed = 1.5;       // How fast the wave moves vertically
+						float wave_frequency = 4.0;   // How many waves horizontally
+						float wave_amplitude = 0.15;  // How wide the wave swings vertically
+						float wave_speed = 1.5;       // How fast the wave moves horizontally
 
-						// Calculate the horizontal center of the wave based on vertical position (st.y) and time
-						float wave_center_x = 0.5 + sin(st.y * wave_frequency * 3.14159 + time * wave_speed) * wave_amplitude;
+						// Calculate the vertical center of the wave based on horizontal position (st.x) and time
+						float wave_center_y = 0.5 + sin(st.x * wave_frequency * 3.14159 + time * wave_speed) * wave_amplitude;
 
 						// --- Blurred Band Calculation ---
 						float band_width = 0.08; // The solid part of the band
 						float blur_width = 0.05; // The faded edge width on each side
 
-						// Calculate the edges for smoothstep
-						float edge0 = wave_center_x - band_width / 2.0 - blur_width;
-						float edge1 = wave_center_x - band_width / 2.0;
-						float edge2 = wave_center_x + band_width / 2.0;
-						float edge3 = wave_center_x + band_width / 2.0 + blur_width;
+						// Calculate the edges for smoothstep (now based on y-coordinate)
+						float edge0 = wave_center_y - band_width / 2.0 - blur_width;
+						float edge1 = wave_center_y - band_width / 2.0;
+						float edge2 = wave_center_y + band_width / 2.0;
+						float edge3 = wave_center_y + band_width / 2.0 + blur_width;
 
 						// Use smoothstep to create the blurred band intensity (0 outside, 1 inside)
-						// smoothstep(a, b, x) goes from 0 to 1 as x goes from a to b
+						// smoothstep(a, b, y) goes from 0 to 1 as y goes from a to b
 						// We create a rising edge (edge0 to edge1) and subtract a falling edge (edge2 to edge3)
-						float intensity = smoothstep(edge0, edge1, st.x) - smoothstep(edge2, edge3, st.x);
+						float intensity = smoothstep(edge0, edge1, st.y) - smoothstep(edge2, edge3, st.y);
 
 						// --- Color ---
 						vec4 wave_color = vec4(0.3, 0.6, 0.9, 1.0); // A nice blue color
