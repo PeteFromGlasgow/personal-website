@@ -50,11 +50,7 @@ import { Image } from 'astro:assets'
 					uniform vec2 u_resolution;
 					uniform float u_time;
 
-					// Simple pseudo-random function (hash)
-					float random (vec2 st) {
-						// We don't need the random function for this effect
-						// return fract(sin(dot(st.xy, vec2(12.9898,78.233))) * 43758.5453123);
-					}
+					// The random function was removed as it was unused and causing a compile error.
 
 					void main(void) {
 						vec2 st = gl_FragCoord.xy / u_resolution.xy; // Normalized coordinates (0.0 to 1.0)
