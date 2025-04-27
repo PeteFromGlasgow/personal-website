@@ -4,6 +4,7 @@
     SidebarContent,
     SidebarFooter,
     SidebarGroup,
+    SidebarGroupContent,
     SidebarGroupLabel,
     SidebarHeader,
     SidebarMenuItem,
@@ -16,7 +17,7 @@
 </script>
 <template>
 <div>
-<SidebarProvider :defaultCollapsed="true">
+<SidebarProvider :defaultOpen="false">
 <Sidebar collapsible='icon'>
   <SidebarHeader>
     <SidebarMenuButton as="a" href="/" class="justify-start">
@@ -49,12 +50,17 @@
     </SidebarGroup>
   </SidebarContent>
   <SidebarFooter>
+  <SidebarMenuItem>
+    <SidebarMenuButton asChild>
+	<SidebarTrigger></SidebarTrigger>
+    </SidebarMenuButton>
+  </SidebarMenuItem>
     <SidebarMenuButton class="justify-center w-full">
       Made with love in 🏴󠁧󠁢󠁳󠁣󠁴󠁿
     </SidebarMenuButton>
   </SidebarFooter>
 </Sidebar>
-<SidebarTrigger></SidebarTrigger>
+
 </SidebarProvider>
 
 </div>
