@@ -52,28 +52,45 @@ import { Image } from 'astro:assets'
 
 					// Simple pseudo-random function (hash)
 					float random (vec2 st) {
-						return fract(sin(dot(st.xy, vec2(12.9898,78.233))) * 43758.5453123);
+						// We don't need the random function for this effect
+						// return fract(sin(dot(st.xy, vec2(12.9898,78.233))) * 43758.5453123);
 					}
 
 					void main(void) {
 						vec2 st = gl_FragCoord.xy / u_resolution.xy; // Normalized coordinates (0.0 to 1.0)
-						vec4 color1 = vec4(1.0, 0.2, 0.4, 1.0);
-						vec4 color2 = vec4(0.5, 0.3, 0.0, 1.0);
-						vec4 color_base = vec4(0.1, 0.5, 0.6, 1.0);
-						float time = u_time * 0.001; // Convert time from ms to seconds
+						float time = u_time * 0.0005; // Slow down time a bit
 
-						vec4 c1_base = 0.5 + 0.5 * sin(time + st.x * 3.14) * color1;
-						vec4 c2_base = 0.5 + 0.5 * cos(time + st.y * 3.14) * color2;
-						vec4 c3_base = 0.5 + 0.5 * cos(time + (st.x + st.y) * 1.57) * color2;
+						// --- Sine Wave Calculation ---
+						float wave_frequency = 4.0;   // How many waves vertically
+						float wave_amplitude = 0.15;  // How wide the wave swings horizontally
+						float wave_speed = 1.5;       // How fast the wave moves vertically
 
-						float r_base = 0.5 + 0.5 * sin(time + st.x * 3.14);
-						float g_base = 0.5 + 0.5 * sin(time + st.x * 3.14);
-						float b_base = 0.5 + 0.5 * cos(time + (st.x + st.y) * 1.57);
+						// Calculate the horizontal center of the wave based on vertical position (st.y) and time
+						float wave_center_x = 0.5 + sin(st.y * wave_frequency * 3.14159 + time * wave_speed) * wave_amplitude;
 
-						// Generate noise based on position and time
-						float noise = random(st + vec2(time * 0.1, time * 0.05)); // Add time to make noise dynamic
+						// --- Blurred Band Calculation ---
+						float band_width = 0.08; // The solid part of the band
+						float blur_width = 0.05; // The faded edge width on each side
 
-						gl_FragColor = mix(c1_base, c2_base, time * 0.1) * noise;
+						// Calculate the edges for smoothstep
+						float edge0 = wave_center_x - band_width / 2.0 - blur_width;
+						float edge1 = wave_center_x - band_width / 2.0;
+						float edge2 = wave_center_x + band_width / 2.0;
+						float edge3 = wave_center_x + band_width / 2.0 + blur_width;
+
+						// Use smoothstep to create the blurred band intensity (0 outside, 1 inside)
+						// smoothstep(a, b, x) goes from 0 to 1 as x goes from a to b
+						// We create a rising edge (edge0 to edge1) and subtract a falling edge (edge2 to edge3)
+						float intensity = smoothstep(edge0, edge1, st.x) - smoothstep(edge2, edge3, st.x);
+
+						// --- Color ---
+						vec4 wave_color = vec4(0.3, 0.6, 0.9, 1.0); // A nice blue color
+						vec4 background_color = vec4(0.0, 0.0, 0.0, 0.0); // Transparent background
+
+						// Mix the background and wave color based on the calculated intensity
+						vec4 final_color = mix(background_color, wave_color, intensity);
+
+						gl_FragColor = final_color;
 					}
 				`;
 
