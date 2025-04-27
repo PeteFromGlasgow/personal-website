@@ -16,7 +16,7 @@
 </script>
 <template>
 <div>
-<SidebarProvider>
+<SidebarProvider :defaultCollapsed="true">
 <Sidebar collapsible='icon'>
   <SidebarHeader>
     <SidebarMenuButton as="a" href="/" class="justify-start">
