@@ -22,9 +22,21 @@ import { Image } from 'astro:assets'
                                         	<Image slot="logo" class="w-6 max-h-6 rounded-md object-contain flex-shrink-0" width="40" height="40" src="https://gravatar.com/avatar/af209d37d6bc17d6e3f3b2210f3e24da96afcd2eb3617a315eea641e9e9cc09c" alt="Peter Kinnaird Logo" loading="eager"/>
 					</Navigation>
 				</div>
-				<div class="flex-1 p-0 m-0 relative">
-					<canvas id="webgl-canvas" class="rotate-1 absolute inset-0 w-screen h-96 -left-2 opacity-60"></canvas>
-					<h1 class="relative z-10 p-4">Peter Kinnaird</h1>  <!-- Added relative positioning and padding to h1 -->
+				<div class="flex-1 p-0 m-0">
+					<div class="flex flex-col h-screen">
+						<div class="flex-1 h-1/4 w-1/4">&nbsp;</div>
+						<div class="flex flex-row flex-none h-1/2">
+					 		<div class="flex-1 h-1/4 w-1/4">&nbsp;</div>
+							<div class="flex-none w-1/2">
+								<div class="p-4">
+					  				<h1 class='text-3xl font-extralight font-mono'>Peter Kinnaird - Software Engineer</h1>  <!-- Added relative positioning and padding to h1 -->
+									<p class='font-light'>Peter is an Engineer and Architect from Glasgow, Scotland</p>
+								</div>
+							</div>
+							<div class="flex-1 h-1/4 w-1/4"></div>
+						</div>
+					<div class="flex-1 h-1/4 w-1/4"></div>
+					<!-- <canvas id="webgl-canvas" class="rotate-1 absolute inset-0 w-screen h-1/4 -left-2 opacity-60"></canvas> -->
 				</div>
 		</div>
 
@@ -56,9 +68,6 @@ import { Image } from 'astro:assets'
 						vec2 st = gl_FragCoord.xy / u_resolution.xy; // Normalized coordinates (0.0 to 1.0)
 						float time = u_time * 0.0005; // Slow down time a bit
 
-						// --- Sine Wave Calculation ---
-						float wave_frequency = 4.0;   // How many waves vertically
-						float wave_amplitude = 0.15;  // How wide the wave swings horizontally
 						float wave_frequency = 4.0;   // How many waves horizontally
 						float wave_amplitude = 0.15;  // How wide the wave swings vertically
 						float wave_speed = 1.5;       // How fast the wave moves horizontally
@@ -67,8 +76,8 @@ import { Image } from 'astro:assets'
 						float wave_center_y = 0.5 + sin(st.x * wave_frequency * 3.14159 + time * wave_speed) * wave_amplitude;
 
 						// --- Blurred Band Calculation ---
-						float band_width = 0.08; // The solid part of the band
-						float blur_width = 0.05; // The faded edge width on each side
+						float band_width = 1.0; // The solid part of the band
+						float blur_width = 0.00; // The faded edge width on each side
 
 						// Calculate the edges for smoothstep (now based on y-coordinate)
 						float edge0 = wave_center_y - band_width / 2.0 - blur_width;
@@ -82,7 +91,9 @@ import { Image } from 'astro:assets'
 						float intensity = smoothstep(edge0, edge1, st.y) - smoothstep(edge2, edge3, st.y);
 
 						// --- Color ---
-						vec4 wave_color = vec4(0.3, 0.6, 0.9, 1.0); // A nice blue color
+						vec4 wave_color1 = vec4(0.9, 0.6, 0.9, 1.0); // A nice blue color
+						vec4 wave_color2 = vec4(0.9, 0.2, 0.2, 1.0);
+						vec4 wave_color = mix(wave_color1 * sin(st.x * time) * 3.14, wave_color2 * cos(st.y * time) * 3.14, intensity);
 						vec4 background_color = vec4(0.0, 0.0, 0.0, 0.0); // Transparent background
 
 						// Mix the background and wave color based on the calculated intensity
