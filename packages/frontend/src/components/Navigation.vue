@@ -8,19 +8,23 @@
     SidebarGroupLabel,
     SidebarHeader,
     SidebarMenuItem,
-    SidebarMenuButton
-    // SidebarProvider, // Remove import
-    // SidebarTrigger // Remove import
+    SidebarMenuButton,
+    SidebarProvider, // Re-add import
+    SidebarTrigger // Re-add import
   } from '@/components/ui/sidebar'
 
   import { CircleUserRound, FileUser } from 'lucide-vue-next'
 </script>
 <template>
-<div>
-<SidebarProvider :defaultOpen="false">
-<Sidebar collapsible='icon'>
-  <SidebarHeader>
-    <SidebarMenuButton as="a" href="/" class="justify-start">
+<SidebarProvider :defaultOpen="false"> {/* Add Provider wrapper here */}
+  <div class="relative h-screen"> {/* Add relative positioning and ensure height */}
+    {/* Position Trigger outside the Sidebar component flow */}
+    <SidebarTrigger class="absolute top-3 left-3 z-10 size-6" />
+
+    <Sidebar collapsible='icon'>
+      <SidebarHeader>
+        {/* Add padding to header to avoid overlap with the absolute trigger */}
+        <SidebarMenuButton as="a" href="/" class="justify-start pl-10">
       <slot name="logo"></slot>
       <span class="ml-2">Kinnaird.scot</span>
     </SidebarMenuButton>
@@ -50,11 +54,9 @@
     </SidebarGroup>
   </SidebarContent>
   <SidebarFooter class="flex flex-col gap-3 p-3">
-    {/* <SidebarTrigger class="size-6" /> Remove Trigger */}
+    {/* Trigger is now outside the footer */}
   </SidebarFooter>
 </Sidebar>
-
-{/* </SidebarProvider> Remove Provider */}
-
 </div>
+</SidebarProvider> {/* Close Provider wrapper */}
 </template>
