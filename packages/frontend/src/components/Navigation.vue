@@ -18,12 +18,10 @@
 <template>
 <SidebarProvider :defaultOpen="false">
   <div class="relative h-screen">
-    {/* Increased z-index to ensure visibility */}
-    <SidebarTrigger class="absolute top-3 left-3 z-50 size-6" />
-
+    <SidebarTrigger class="absolute bottom-3 left-3 z-50 size-6" />
     <Sidebar collapsible='icon'>
       <SidebarHeader>
-        <SidebarMenuButton as="a" href="/" class="justify-start pl-10">
+        <SidebarMenuButton as="a" href="/">
       <slot name="logo"></slot>
       <span class="ml-2">Kinnaird.scot</span>
     </SidebarMenuButton>
