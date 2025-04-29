@@ -8,9 +8,9 @@
     SidebarGroupLabel,
     SidebarHeader,
     SidebarMenuItem,
-    SidebarMenuButton,
-    SidebarProvider,
-    SidebarTrigger
+    SidebarMenuButton
+    // SidebarProvider, // Remove import
+    // SidebarTrigger // Remove import
   } from '@/components/ui/sidebar'
 
   import { CircleUserRound, FileUser } from 'lucide-vue-next'
@@ -50,11 +50,11 @@
     </SidebarGroup>
   </SidebarContent>
   <SidebarFooter class="flex flex-col gap-3 p-3">
-    <SidebarTrigger class="size-6" />
+    {/* <SidebarTrigger class="size-6" /> Remove Trigger */}
   </SidebarFooter>
 </Sidebar>
 
-</SidebarProvider>
+{/* </SidebarProvider> Remove Provider */}
 
 </div>
 </template>

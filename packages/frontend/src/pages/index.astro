@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import { Button } from '@/components/ui/button';
 import Navigation from '@/components/Navigation.vue'
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar" // Keep imports
 import { Image } from 'astro:assets'
 ---
 
@@ -16,14 +16,16 @@ import { Image } from 'astro:assets'
 	</head>
 
 	<body>
-		<div class="flex flex-row h-screen">
-				<div class="h-screen flex-none">
-					<Navigation client:load>
-                                        	<Image slot="logo" class="w-6 max-h-6 rounded-md object-contain flex-shrink-0" width="40" height="40" src="https://gravatar.com/avatar/af209d37d6bc17d6e3f3b2210f3e24da96afcd2eb3617a315eea641e9e9cc09c" alt="Peter Kinnaird Logo" loading="eager"/>
-					</Navigation>
-				</div>
-				<div class="flex-1 p-0 m-0">
-					<div class="flex flex-col h-screen">
+		<SidebarProvider :defaultOpen="false" client:load> {/* Add Provider wrapper */}
+			<div class="flex flex-row h-screen">
+					<div class="h-screen flex-none p-2"> {/* Add padding for trigger */}
+						<SidebarTrigger class="size-6 mb-2" /> {/* Add Trigger here */}
+						<Navigation client:load>
+							<Image slot="logo" class="w-6 max-h-6 rounded-md object-contain flex-shrink-0" width="40" height="40" src="https://gravatar.com/avatar/af209d37d6bc17d6e3f3b2210f3e24da96afcd2eb3617a315eea641e9e9cc09c" alt="Peter Kinnaird Logo" loading="eager"/>
+						</Navigation>
+					</div>
+					<div class="flex-1 p-0 m-0">
+						<div class="flex flex-col h-screen">
 						<div class="flex-1 h-1/4 w-1/4">&nbsp;</div>
 						<div class="flex flex-row flex-none h-1/2">
 					 		<div class="hidden md:flex flex-1 h-1/4 w-1/4">&nbsp;</div>
@@ -37,11 +39,13 @@ import { Image } from 'astro:assets'
 						</div>
 					<div class="flex-1 h-1/4 w-1/4"></div>
 					<!-- <canvas id="webgl-canvas" class="rotate-1 absolute inset-0 w-screen h-1/4 -left-2 opacity-60"></canvas> -->
+					<!-- <canvas id="webgl-canvas" class="rotate-1 absolute inset-0 w-screen h-1/4 -left-2 opacity-60"></canvas> -->
 				</div>
-		</div>
+			</div>
+		</SidebarProvider> {/* Close Provider wrapper */}
 
 		<script is:inline>
-			const canvas = document.getElementById('webgl-canvas');
+			// const canvas = document.getElementById('webgl-canvas'); // Keep canvas code commented out
 			const gl = canvas.getContext('webgl');
 
 			if (!gl) {
