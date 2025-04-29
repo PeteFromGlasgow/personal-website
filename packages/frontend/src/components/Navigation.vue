@@ -18,7 +18,8 @@
 <template>
 <SidebarProvider :defaultOpen="false">
   <div class="relative h-screen">
-    <SidebarTrigger class="absolute top-3 left-3 z-10 size-6" />
+    {/* Increased z-index to ensure visibility */}
+    <SidebarTrigger class="absolute top-3 left-3 z-50 size-6" />
 
     <Sidebar collapsible='icon'>
       <SidebarHeader>
