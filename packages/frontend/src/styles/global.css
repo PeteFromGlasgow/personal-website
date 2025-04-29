@@ -121,3 +121,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+@theme {
+  --animate-slow-y-axis-rotate: slow-y-axis-rotate 25s ease-in-out infinite;
+  @keyframes slow-y-axis-rotate {
+    0% { transform: rotateX(3deg) rotateY(-10deg) rotateZ(3deg); }
+    50% { transform: rotateX(-3deg) rotateY(10deg) rotateZ(-3deg); }
+    100% { transform: rotateX(3deg) rotateY(-10deg) rotateZ(3deg); }
+  }
+}

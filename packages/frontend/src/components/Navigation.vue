@@ -9,8 +9,8 @@
     SidebarHeader,
     SidebarMenuItem,
     SidebarMenuButton,
-    SidebarProvider, // Re-add import
-    SidebarTrigger // Re-add import
+    SidebarProvider,
+    SidebarTrigger
   } from '@/components/ui/sidebar'
 
   import { CircleUserRound, FileUser } from 'lucide-vue-next'
@@ -18,7 +18,7 @@
 <template>
 <SidebarProvider :defaultOpen="false">
   <div class="relative h-screen">
-    <SidebarTrigger class="absolute bottom-3 left-3 z-50 size-6" />
+    <SidebarTrigger class="md:hidden absolute top-3 left-3 z-50" />
     <Sidebar collapsible='icon'>
       <SidebarHeader>
         <SidebarMenuButton as="a" href="/">
@@ -51,6 +51,7 @@
     </SidebarGroup>
   </SidebarContent>
   <SidebarFooter class="flex flex-col gap-3 p-3">
+    <SidebarTrigger class="hidden md:block" />
   </SidebarFooter>
 </Sidebar>
 </div>
