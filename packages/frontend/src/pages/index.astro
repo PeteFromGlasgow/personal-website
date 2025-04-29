@@ -26,14 +26,14 @@ import { Image } from 'astro:assets'
 					<div class="flex flex-col h-screen">
 						<div class="flex-1 h-1/4 w-1/4">&nbsp;</div>
 						<div class="flex flex-row flex-none h-1/2">
-					 		<div class="flex-1 h-1/4 w-1/4">&nbsp;</div>
-							<div class="flex-none w-1/2">
+					 		<div class="hidden md:flex flex-1 h-1/4 w-1/4">&nbsp;</div>
+							<div class="flex-none w-full md:w-1/2">
 								<div class="p-4">
 					  				<h1 class='text-3xl font-extralight font-mono'>Peter Kinnaird - Software Engineer</h1>  <!-- Added relative positioning and padding to h1 -->
 									<p class='font-light'>Peter is an Engineer and Architect from Glasgow, Scotland</p>
 								</div>
 							</div>
-							<div class="flex-1 h-1/4 w-1/4"></div>
+							<div class="hidden md:flex flex-1 h-1/4 w-1/4"></div>
 						</div>
 					<div class="flex-1 h-1/4 w-1/4"></div>
 					<!-- <canvas id="webgl-canvas" class="rotate-1 absolute inset-0 w-screen h-1/4 -left-2 opacity-60"></canvas> -->
