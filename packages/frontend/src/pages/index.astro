@@ -39,14 +39,14 @@ import TypescriptLogo from 'src/assets/ts-logo-512.svg'
 							</div>
 						</div>
 						<div class="hidden md:flex flex-1 w-1/4 self-center">
-							<div class="transform-3d animate-slow-y-axis-rotate transition-transform antialiased perspective-midrange backface-hidden">
+							<div class="transform-3d animate-slow-y-axis-rotate transition-transform subpixel-antialiased backface-hidden">
 								<div class="w-[40px] h-[60px] -translate-x-60 translate-y-10 -translate-z-60  absolute rounded-2xl">
 									<KubernetesLogo width={128} height={128} />
 								</div>
-								<div class="w-[80px] h-[120px] translate-x-140 translate-y-10 -translate-z-20 rotate-y-45 absolute rounded-2xl">
-									<PostgresLogo width={128} height={128} />
+								<div class="w-[80px] h-[120px] translate-x-140 translate-y-10 -translate-z-20 -rotate-y-6 absolute rounded-2xl">
+									<PostgresLogo width={128} height={128} class="[shape-rendering: auto]"/>
 								</div>
-								<div class="w-[80px] h-[120px] -translate-x-60 translate-y-120 -translate-z-30 rotate-y-3 absolute rounded-2xl animate-slow-y-axis-rotate">
+								<div class="w-[128px] h-[128px] -translate-x-60 translate-y-120 -translate-z-30 rotate-y-3 absolute rounded-2xl animate-slow-y-axis-rotate">
 									<TypescriptLogo width={128} height={128} />
 								</div>
 								<Image src={me} width="480" height="640" class="rounded-2xl drop-shadow-2xl" alt="Image of Peter Kinnaird"></Image>
