@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jsonresume/resume-schema/refs/heads/master/schema.json#properties/work
+# In reverse chronological order
+- name: Pelion IoT Limited
+  position: Head of Product Delivery
+  url: https://pelion.com
+  startDate: 2023-04
+- name: Pelion IoT Limited
+  position: Director of Software Engineering
+  url: https://pelion.com
+  startDate: 2022-02
+  endDate: 2023-04
+- name: Pelion IoT Limited
+  position: Principal Software Architect
+  url: https://pelion.com
+  startDate: 2021-03
+- name: Pelion IoT Limited
+  position: Staff Software Architect
+  url: https://pelion.com
+  startDate: 2020-11
+  endDate: 2021-03
+- name: Arm Cloud Services Limited
+  position: Staff Software Architect
+  url: https://arm.com
+  startDate: 2018-06
+  endDate: 2020-11
+- name: Stream Technologies Ltd
+  position: Senior Software Architect
+  startDate: 2018-03
+  endDate: 2015-03
+- name: Stream Technologies Ltd
+  position: Senior Developer
+  startDate: 2014-04
+  endDate: 2015-03
+- name: Stream Technologies Ltd
+  startDate: 2012-08
+  endDate: 2014-04
+
