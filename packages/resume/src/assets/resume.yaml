@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jsonresume/resume-schema/refs/heads/master/schema.json
+
+basics:
+  name: Peter Kinnaird
+  url: https://kinnaird.scot
+  email: contact@kinnaird.scot
+  label: Leader in Software Engineering & Infrastructure
+  location:
+    countryCode: GB
+    city: Glasgow
+    region: Scotland
