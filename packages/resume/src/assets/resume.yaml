@@ -2,6 +2,8 @@
 
 basics:
   name: Peter Kinnaird
+  summary: |
+    As a Leader in Software Engineering & Infrastructure, I define and drive the technical vision, translating complex business needs into robust and scalable systems. I excel at guiding high-performing teams to architect, deliver, and maintain critical infrastructure and software solutions that meet stringent regulatory requirements and operational demands. My leadership ensures a resilient, efficient, and forward-looking technology foundation that operates within all necessary constraints.
   url: https://kinnaird.scot
   email: contact@kinnaird.scot
   label: Leader in Software Engineering & Infrastructure
@@ -9,3 +11,13 @@ basics:
     countryCode: GB
     city: Glasgow
     region: Scotland
+publications:
+  - publisher: IEEE Sensors
+    name: Evaluation of LoRa and LoRaWAN for wireless sensor networks
+    summary: Focusing primarily on the implemetation of the LoRaWAN Network Server, I drafted this paper with the help of some other members of the Stream Technologies team. The paper focuses
+    url: https://ieeexplore.ieee.org/document/7808712
+    releaseDate: 2016-10-30
+  - publisher: US Patent 11197161
+    name: System and method for connectivity management
+    summary: Patent protecting the specific process for connectivity management used in the now supercedes OaSys platform.
+    releaseDate: 2021-12-07
