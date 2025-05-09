@@ -25,11 +25,18 @@
   endDate: 2020-11
 - name: Stream Technologies Ltd
   position: Senior Software Architect
+  summary: The business growth really during this term and the team size grew massively from 10 to around 30 engineers, as an early member of the team my responsibilities significantly expanded - this included making sure the companies technical capabilities could scale effectively giving me my new role as Architect.
+  highlights:
+    - Implemented a much stricter set of engineering processes - including Architecture Decision Records, introducing methodologies like TDD and implementing a CI system.
+    - Designed, implemented & built a LoRaWAN Network & Application Server with a small team.
+    - Presented the LoRaWAN solution at multiple conferences and performed research into LoRas capabilities, resulting in a publication in IEEE Sensors.
+    - Assisted with pre-acquisition tasks and due-diligence related reporting.
   startDate: 2015-04
   endDate: 2018-03
 - name: Stream Technologies Ltd
   summary: Continuation of the same position at Stream, at this point in time the team was expanding rapidly and a number of developers and other members joined.
   highlights:
+    - With the rest of the team, reimplemented a new frontend and APIs for the OaSys platform - now rebranded to IoT-X
     - Started implemeting other systems within the company such as a proper ticketing system to allow easier management of work.
     - Along with the rest of the team, moved the companies legacy SVN based source control to Git.
     - Worked with multiple stakeholders at the business to deliver tooling which helped the company operate - learned a lot about the business.
