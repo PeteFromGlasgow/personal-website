@@ -25,9 +25,16 @@
   endDate: 2020-11
 - name: Stream Technologies Ltd
   position: Senior Software Architect
-  startDate: 2018-03
-  endDate: 2015-03
+  startDate: 2015-04
+  endDate: 2018-03
 - name: Stream Technologies Ltd
+  summary: Continuation of the same position at Stream, at this point in time the team was expanding rapidly and a number of developers and other members joined.
+  highlights:
+    - Started implemeting other systems within the company such as a proper ticketing system to allow easier management of work.
+    - Along with the rest of the team, moved the companies legacy SVN based source control to Git.
+    - Worked with multiple stakeholders at the business to deliver tooling which helped the company operate - learned a lot about the business.
+    - Started working on the design of solutions for Low-Power Radio - first proprietary solutions and then LoRa & LoRaWAN, which was becoming popular in the industry at the time.
+    - Also done some work integration with Satellite networks at this time.
   position: Senior Developer
   startDate: 2014-04
   endDate: 2015-03
@@ -36,7 +43,7 @@
   highlights:
     - Hit the ground running and made significant numbers of changes to the platform.
     - Implemented the companies first automated deployment system.
-    - Worked extensively with other teams in the business to develop internal tools
+    - Worked extensively with other teams in the business to develop internal tools.
   position: Developer
   startDate: 2012-08
   endDate: 2014-04
