@@ -7,23 +7,40 @@
 - name: Pelion IoT Limited
   position: Director of Software Engineering
   summary: Responsible for setting direction of Product Engineering. Update Software Development Processes to improve quality, delivery cadence & team satisfaction. Still maintain Architecture & Engineering roles.
+  highlights:
+    - Responsible for setting direction of Product Engineering
+    - Updated Software Development Processes to improve quality, delivery cadence & team satisfaction
+    - Maintained Architecture & Engineering roles
   url: https://pelion.com
   startDate: 2022-02
   endDate: 2023-04
 - name: Pelion IoT Limited
   position: Principal Software Architect
   summary: Responsible for day to day mentoring and helping team members. Engage with the rest of the business as an Engineering Stakeholder. Championed the transition from Bare Metal & Virtual Machines to Kubernetes. Took over parts of the Architecture Director & Software Engineering Managers workload as they went on paternity leave.
+  highlights:
+    - Responsible for day to day mentoring and helping team members
+    - Engaged with the rest of the business as an Engineering Stakeholder
+    - Championed the transition from Bare Metal & Virtual Machines to Kubernetes
+    - Took over parts of the Architecture Director & Software Engineering Managers workload as they went on paternity leave
   url: https://pelion.com
   startDate: 2021-03
 - name: Pelion IoT Limited
   position: Staff Software Architect
   summary: Proposed tools & solutions to the Engineering team - then helped them select the most suitable for their problem. Helped remove integrations we previously made into Arm during the acquisition. Continued to champion good architecture practices such as ADRs.
+  highlights:
+    - Proposed tools & solutions to the Engineering team and helped them select the most suitable
+    - Helped remove integrations previously made into Arm during the acquisition
+    - Continued to champion good architecture practices such as ADRs
   url: https://pelion.com
   startDate: 2020-11
   endDate: 2021-03
 - name: Arm Cloud Services Limited
   position: Staff Software Architect
   summary: Enabled the transition from Stream Technologies systems to Arm systems after acquisition. Worked with the Quality Team to help enhance our quality standards. Engaged with the Developer Evangelist team to introduce Connectivity as part of Arms products to our customers.
+  highlights:
+    - Enabled the transition from Stream Technologies systems to Arm systems after acquisition
+    - Worked with the Quality Team to help enhance quality standards
+    - Engaged with the Developer Evangelist team to introduce Connectivity as part of Arms products to customers
   url: https://arm.com
   startDate: 2018-06
   endDate: 2020-11
