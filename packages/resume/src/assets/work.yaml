@@ -2,6 +2,10 @@
 # In reverse chronological order
 - name: Pelion IoT Limited
   position: Head of Product Delivery
+  summary: Standardization of roles across the company saw my role name change to "Head of Product Delivery" but my duties remained largely the same. At this point I took a larger role in the infrastructure function and worked directly with the Site-Reliability Engineering team to migrate our platform onto Kubernetes. This was part of a much wider standardization of tooling and cost saving process from overspend which was accumulated at Arm.
+  highlights:
+    - Worked with relevant teams around the business to migrate systems from the public cloud (Azure, AWS) into our data centres.
+    - Lead the migration of our platform stack to Kubernetes - greatly simplifying our deployment process & infrastructure management overhead.
   url: https://pelion.com
   startDate: 2023-04
 - name: Pelion IoT Limited
@@ -52,6 +56,7 @@
     - Designed, implemented & built a LoRaWAN Network & Application Server with a small team.
     - Presented the LoRaWAN solution at multiple conferences and performed research into LoRas capabilities, resulting in a publication in IEEE Sensors.
     - Assisted with pre-acquisition tasks and due-diligence related reporting.
+    - Championed move from older PHP codebase to new technologies
   startDate: 2015-04
   endDate: 2018-03
 - name: Stream Technologies Ltd
@@ -72,6 +77,8 @@
     - Hit the ground running and made significant numbers of changes to the platform.
     - Implemented the companies first automated deployment system.
     - Worked extensively with other teams in the business to develop internal tools.
+    - Designed and wrote the companies first APIs
+    - Helped with day to day business tasks such as support
   position: Developer
   startDate: 2012-08
   endDate: 2014-04
