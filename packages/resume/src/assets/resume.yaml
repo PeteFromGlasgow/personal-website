@@ -15,7 +15,13 @@ basics:
     - network: GitHub
       url: https://github.com/PeteFromGlasgow
       username: PeteFromGlasgow
-
+languages:
+  - language: English
+    fluency: Native Speaker
+  - language: Spanish
+    fluency: Intermediate
+  - language: Japanese
+    fluency: Intermediate
 publications:
   - publisher: IEEE Sensors
     name: Evaluation of LoRa and LoRaWAN for wireless sensor networks
