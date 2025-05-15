@@ -39,3 +39,29 @@ education:
     startDate: 2008-09
     endDate: 2012-07
     url: https://www.strath.ac.uk/courses/undergraduate/computersciencebsc/
+skills:
+  - name: "Strategic & Technical Leadership"
+    keywords:
+      - "Technical Vision & Long-Term Strategy Definition"
+      - "Architectural Oversight & Governance"
+      - "Infrastructure Modernization & Repatriation Strategy"
+      - "Innovation & Emerging Technology Adoption"
+      - "Business Alignment & Senior Stakeholder Engagement"
+      - "Change Leadership & Organizational Transformation"
+      - "Technical Due Diligence & Strategic Assessments"
+      - "Driving Cost Optimization Initiatives"
+      - "Thought Leadership (Publications, Conference Presentations)"
+    level: Expert
+  - name: "Engineering Management & Delivery"
+    keywords:
+      - Engineering Team Leadership
+      - People Management (Performance, Growth, Mentorship, 1-on-1s)
+      - SDLC Optimization & Agile Transformations
+      - Process Improvement & Engineering Excellence Initiatives
+      - Developer Experience (DX) & Productivity Enhancement
+      - Quality Assurance Strategy & Bug Reduction
+      - CI/CD Philosophy & Tooling Standardization
+      - Operational Efficiency & Resource Planning
+      - Compliance Management & Execution (ISO27001)
+      - Agile Tooling & Best Practices (Jira, Gitflow)
+    level: Expert
