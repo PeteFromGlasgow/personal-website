@@ -32,3 +32,10 @@ publications:
     name: System and method for connectivity management
     summary: Patent protecting the specific process for connectivity management used in the now supercedes OaSys platform.
     releaseDate: 2021-12-07
+education:
+  - institution: University of Strathclyde
+    studyType: BSc (Hons)
+    area: Computer Science
+    startDate: 2008-09
+    endDate: 2012-07
+    url: https://www.strath.ac.uk/courses/undergraduate/computersciencebsc/
