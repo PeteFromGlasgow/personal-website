@@ -83,3 +83,35 @@ skills:
       - Monitoring & Observability (Grafana)
       - System Security (SELinux, netfilter)
     level: Expert
+  - name: "Software Architecture & Development"
+    keywords:
+      - "Microservice Architecture & Design"
+      - "API Design & Development (RESTful, API Gateways)"
+      - "System Decoupling & Integration Strategy"
+      - "PHP (Modernization & Legacy Systems)"
+      - "JavaScript (Frontend Frameworks e.g., AngularJS)"
+      - "Node.js"
+      - "Database Schema Design & Migration"
+      - "Git & Advanced Version Control Workflows"
+      - "Architecture Decision Records (ADRs)"
+      - "Test-Driven Development (TDD)"
+      - "Internationalization (i18n) Architecture"
+    level: "Expert"
+  - name: "Process Improvement & Engineering Excellence"
+    keywords:
+      - "Developer Experience (DX) Enhancement"
+      - "Code Review Process Optimization"
+      - "Pair Programming & Mob Programming Advocacy"
+      - "Quality Assurance Strategy"
+      - "Bug Reduction & Product Stability Improvement"
+      - "Jira & Agile Tooling Implementation"
+      - "Automation of Operational Tasks"
+    level: "Expert"
+  - name: "AI/Machine Learning"
+    keywords:
+      - Deep Learning Fundamentals
+      - Model Fine-Tuning (Diffusion Models, Large Language Models)
+      - PyTorch (Experimentation & Prototyping)
+      - Generative AI Principles (Exploration)
+      - Staying Abreast of AI/ML Advancements
+    level: "Foundational"
