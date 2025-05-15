@@ -65,3 +65,21 @@ skills:
       - Compliance Management & Execution (ISO27001)
       - Agile Tooling & Best Practices (Jira, Gitflow)
     level: Expert
+  - name: "Cloud, Kubernetes & Infrastructure Engineering"
+    keywords:
+      - Kubernetes (Migration, Deployment, Operations)
+      - Docker & Containerization
+      - Data Center Operations & Management
+      - Large Public Cloud (AWS, Microsoft Azure, GCP)
+      - Smaller Public Cloud (Hetzner, Scaleway, DigitalOcean)
+      - Private Cloud Platforms (Nutanix, ESXi)
+      - Infrastructure as Code (Terraform, Ansible, cloud-init)
+      - CI/CD Pipeline Design & Automation
+      - Linux System Administration (Linux, FreeBSD)
+      - "Network Engineering (L2/L3 Switching & Routing, DNS, TCP/IP, VPNs)"
+      - "Network Firewalls & Security (IPTables, Netfilter, pfSense)"
+      - "Network Analysis & Troubleshooting (tcpdump, Wireshark, routing diagnostics)"
+      - "Specialized Network Protocols (LoRaWAN)"
+      - Monitoring & Observability (Grafana)
+      - System Security (SELinux, netfilter)
+    level: Expert
