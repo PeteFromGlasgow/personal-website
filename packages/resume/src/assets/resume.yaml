@@ -11,6 +11,11 @@ basics:
     countryCode: GB
     city: Glasgow
     region: Scotland
+  profiles:
+    - network: GitHub
+      url: https://github.com/PeteFromGlasgow
+      username: PeteFromGlasgow
+
 publications:
   - publisher: IEEE Sensors
     name: Evaluation of LoRa and LoRaWAN for wireless sensor networks
