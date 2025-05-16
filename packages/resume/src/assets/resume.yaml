@@ -121,8 +121,20 @@ interests:
       - Hiking
       - Paddleboarding
       - Kayaking
-  - name: Design, 3D Printing
+  - name: Design & 3D Printing
     keywords:
       - 3D Printing
       - Autodesk Fusion 360
       - Klipper
+  - name: Electronics & DIY
+    keywords:
+      - Home Assistant
+      - ESP32 Development
+      - Arduino
+      - Circuit Design
+  - name: Homelab
+    keywords:
+      - Server Administration
+      - Virtualization
+      - Network Configuration
+      - Self-Hosted Services
