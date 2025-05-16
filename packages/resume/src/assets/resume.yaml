@@ -116,4 +116,13 @@ skills:
       - Staying Abreast of AI/ML Advancements
     level: "Foundational"
 interests:
-  - name: Kayaking
+  - name: Outdoor Activities
+    keywords:
+      - Hiking
+      - Paddleboarding
+      - Kayaking
+  - name: Design, 3D Printing
+    keywords:
+      - 3D Printing
+      - Autodesk Fusion 360
+      - Klipper
