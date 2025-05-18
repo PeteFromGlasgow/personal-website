@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jsonresume/resume-schema/refs/heads/master/schema.json#properties/skills
+- name: "Strategic & Technical Leadership"
+  keywords:
+    - "Technical Vision & Long-Term Strategy Definition"
+    - "Architectural Oversight & Governance"
+    - "Infrastructure Modernization & Repatriation Strategy"
+    - "Innovation & Emerging Technology Adoption"
+    - "Business Alignment & Senior Stakeholder Engagement"
+    - "Change Leadership & Organizational Transformation"
+    - "Technical Due Diligence & Strategic Assessments"
+    - "Driving Cost Optimization Initiatives"
+    - "Thought Leadership (Publications, Conference Presentations)"
+  level: Expert
+- name: "Engineering Management & Delivery"
+  keywords:
+    - Engineering Team Leadership
+    - People Management (Performance, Growth, Mentorship, 1-on-1s)
+    - SDLC Optimization & Agile Transformations
+    - Process Improvement & Engineering Excellence Initiatives
+    - Developer Experience (DX) & Productivity Enhancement
+    - Quality Assurance Strategy & Bug Reduction
+    - CI/CD Philosophy & Tooling Standardization
+    - Operational Efficiency & Resource Planning
+    - Compliance Management & Execution (ISO27001)
+    - Agile Tooling & Best Practices (Jira, Gitflow)
+  level: Expert
+- name: "Cloud, Kubernetes & Infrastructure Engineering"
+  keywords:
+    - Kubernetes (Migration, Deployment, Operations)
+    - Docker & Containerization
+    - Data Center Operations & Management
+    - Large Public Cloud (AWS, Microsoft Azure, GCP)
+    - Smaller Public Cloud (Hetzner, Scaleway, DigitalOcean)
+    - Private Cloud Platforms (Nutanix, ESXi)
+    - Infrastructure as Code (Terraform, Ansible, cloud-init)
+    - CI/CD Pipeline Design & Automation
+    - Linux System Administration (Linux, FreeBSD)
+    - "Network Engineering (L2/L3 Switching & Routing, DNS, TCP/IP, VPNs)"
+    - "Network Firewalls & Security (IPTables, Netfilter, pfSense)"
+    - "Network Analysis & Troubleshooting (tcpdump, Wireshark, routing diagnostics)"
+    - "Specialized Network Protocols (LoRaWAN)"
+    - Monitoring & Observability (Grafana)
+    - System Security (SELinux, netfilter)
+  level: Expert
+- name: "Software Architecture & Development"
+  keywords:
+    - "Microservice Architecture & Design"
+    - "API Design & Development (RESTful, API Gateways)"
+    - "System Decoupling & Integration Strategy"
+    - "PHP (Modernization & Legacy Systems)"
+    - "JavaScript (Frontend Frameworks e.g., AngularJS)"
+    - "Node.js"
+    - "Database Schema Design & Migration"
+    - "Git & Advanced Version Control Workflows"
+    - "Architecture Decision Records (ADRs)"
+    - "Test-Driven Development (TDD)"
+    - "Internationalization (i18n) Architecture"
+  level: "Expert"
+- name: "Process Improvement & Engineering Excellence"
+  keywords:
+    - "Developer Experience (DX) Enhancement"
+    - "Code Review Process Optimization"
+    - "Pair Programming & Mob Programming Advocacy"
+    - "Quality Assurance Strategy"
+    - "Bug Reduction & Product Stability Improvement"
+    - "Jira & Agile Tooling Implementation"
+    - "Automation of Operational Tasks"
+  level: "Expert"
+- name: "AI/Machine Learning"
+  keywords:
+    - Deep Learning Fundamentals
+    - Model Fine-Tuning (Diffusion Models, Large Language Models)
+    - PyTorch (Experimentation & Prototyping)
+    - Generative AI Principles (Exploration)
+    - Staying Abreast of AI/ML Advancements
+  level: "Foundational"

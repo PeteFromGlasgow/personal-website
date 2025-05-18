@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jsonresume/resume-schema/refs/heads/master/schema.json#properties/education
+- institution: University of Strathclyde
+  studyType: BSc (Hons)
+  area: Computer Science
+  startDate: 2008-09
+  endDate: 2012-07
+  url: https://www.strath.ac.uk/courses/undergraduate/computersciencebsc/
