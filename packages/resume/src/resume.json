@@ -1,0 +1,306 @@
+{
+  "work": [
+    {
+      "name": "Pelion IoT Limited",
+      "position": "Head of Product Delivery",
+      "summary": "Following company-wide role standardization, transitioned to Head of Product Delivery, retaining core engineering leadership while broadening scope to include infrastructure strategy and SRE collaboration. Spearheaded a major platform migration to Kubernetes and led the strategic repatriation of workloads from public clouds (Azure, AWS) to data centers. These initiatives, alongside wider tooling standardization, significantly reduced operational costs (approx. £100k p.a.), simplified infrastructure management, and improved developer experience by consolidating tools and environments previously inherited from Arm.",
+      "highlights": [
+        "Directed the migration of key systems from Azure/AWS to internal data centers, achieving annual cost savings of ~£100k and simplifying the operational landscape.",
+        "Led the cross-functional migration of the core platform stack to Kubernetes, resulting in significantly faster deployment cycles, reduced infrastructure complexity, and enhanced developer experience.",
+        "Collaborated directly with SRE to define and execute infrastructure modernization strategy, aligning platform capabilities with business needs.",
+        "Drove standardization of engineering tools (e.g., CI/CD, monitoring) across teams, reducing fragmentation and improving operational consistency."
+      ],
+      "url": "https://pelion.com",
+      "startDate": "2023-04"
+    },
+    {
+      "name": "Pelion IoT Limited",
+      "position": "Director of Software Engineering",
+      "summary": "Established the strategic technical direction for the Product Engineering department, ensuring alignment with product roadmaps and company objectives. Overhauled Software Development Lifecycle (SDLC) processes, implementing and championing practices like enhanced Code Reviews, Pair/Mob Programming, Local Development Environments, Mocking, and dedicated '20% time' for innovation. These changes demonstrably improved product quality (reducing customer support tickets), boosted delivery cadence, increased Customer Satisfaction & Net Promoter Scores (NPS), and enhanced developer satisfaction. Also managed engineering progression, goal setting, and training advocacy. Maintained architectural oversight for key initiatives and ensured processes supported certifications like ISO27001.",
+      "highlights": [
+        "Defined and executed the technical strategy for Product Engineering, aligning team efforts with business goals.",
+        "Revamped SDLC processes with Agile refinements, CI/CD enhancements, and quality initiatives (Pair/Mob Programming, improved Code Reviews, Mocking), leading to fewer customer-reported bugs and higher NPS.",
+        "Fostered a culture of innovation and developer growth through initiatives like '20% time' and advocating for training/conference attendance.",
+        "Implemented robust processes supporting compliance requirements for certifications like ISO27001.",
+        "Managed engineer performance, including goal setting and career progression tracking."
+      ],
+      "url": "https://pelion.com",
+      "startDate": "2022-02",
+      "endDate": "2023-04"
+    },
+    {
+      "name": "Pelion IoT Limited",
+      "position": "Principal Software Architect",
+      "summary": "Served as a senior technical leader, providing daily mentorship through code reviews, 1-on-1s, and design sessions. Acted as a key Engineering stakeholder interfacing with Product Management and other business units on technical feasibility and design. Vigorously championed the transition to Kubernetes through technical proposals, presentations, and live demonstrations. Designed core platform enhancements including the company's internationalization (i18n) strategy and solutions for migrating legacy database schemas (tackling 'metadata tribbles'). Assumed critical Architecture Director & Software Engineering Manager responsibilities (including team goal setting) during extended leaves ensuring operational continuity.",
+      "highlights": [
+        "Provided daily technical mentorship and architectural guidance to engineers across multiple teams via code reviews, design sessions, and 1-on-1s.",
+        "Championed the strategic migration to Kubernetes, effectively communicating benefits and technical approach through proposals and live demos.",
+        "Designed the platform's internationalization (i18n) architecture and strategy.",
+        "Architected and proposed a migration strategy to gracefully handle legacy database schemas (e.g., `Company_details` tables) into a consolidated structure.",
+        "Acted as primary engineering contact for Product Management, advising on technical feasibility and architectural direction.",
+        "Successfully covered senior management duties (architecture reviews, team goals) during paternity leave."
+      ],
+      "url": "https://pelion.com",
+      "startDate": "2021-03"
+    },
+    {
+      "name": "Pelion IoT Limited",
+      "position": "Staff Software Architect",
+      "summary": "Focused on refining Pelion's technical architecture and tooling post-spinoff from Arm. Evaluated, proposed, and demonstrated potential tools and solutions to engineering teams, guiding selection based on suitability. Led the technical effort to decouple Pelion's systems from remaining Arm integrations (contributing to eventual cost savings and DX improvements). Continued to embed strong architectural practices like Architecture Decision Records (ADRs) within the engineering workflow. Designed foundational elements like early composing API gateway concepts.",
+      "highlights": [
+        "Researched, proposed, and demonstrated tools/solutions (e.g., for messaging, data storage) to engineering teams, facilitating informed technology choices.",
+        "Led the technical analysis and removal of critical system integrations inherited from Arm, ensuring Pelion's operational independence.",
+        "Designed initial concepts for a composing API gateway to improve API consumption.",
+        "Actively promoted and ensured adherence to architectural best practices, including the use of ADRs for significant decisions."
+      ],
+      "url": "https://pelion.com",
+      "startDate": "2020-11",
+      "endDate": "2021-03"
+    },
+    {
+      "name": "Arm Cloud Services Limited",
+      "position": "Staff Software Architect",
+      "summary": "Following Arm's acquisition of Stream Technologies, played a key technical role integrating Stream's internal systems & processes into the Arm ecosystem. Focused on architectural alignment, API integration, and data migration strategies. Collaborated with Arm's central QA and security teams to enhance quality standards and processes (e.g., introducing improved testing strategies, static analysis), ensuring alignment with corporate standards and supporting compliance efforts. Worked with Developer Evangelism to articulate the value proposition of the connectivity services to Arm's customers.",
+      "highlights": [
+        "Architected key integration points between Stream and Arm's internal tools and processes.",
+        "Collaborated with central QA to enhance testing strategies and quality standards, supporting compliance goals.",
+        "Worked with Developer Evangelists to create technical content promoting connectivity APIs and use cases."
+      ],
+      "url": "https://arm.com",
+      "startDate": "2018-06",
+      "endDate": "2020-11"
+    },
+    {
+      "name": "Stream Technologies Ltd",
+      "position": "Senior Software Architect",
+      "summary": "Promoted to Architect during rapid company growth (team expanding from ~10 to ~30). Established and enforced stricter engineering processes including comprehensive Code Reviews, TDD, CI/CD pipelines, ADRs, and standardized Git workflows to manage complexity and improve quality, measurably reducing bug rates over time. Designed and led the implementation of a scalable LoRaWAN Network & Application Server. Presented this work at industry conferences and co-authored research published in IEEE Sensors. Actively participated in technical due diligence leading to the Arm acquisition. Championed the strategic shift from legacy PHP towards modern technologies and architectural patterns (e.g., microservices, modern web frameworks, messaging systems).",
+      "highlights": [
+        "Instituted robust engineering processes (ADRs, TDD, CI/CD, Code Reviews, Gitflow) enhancing quality and predictability during major team growth.",
+        "Designed and led the development of a production LoRaWAN Network & Application Server, handling device management and data processing.",
+        "Presented LoRaWAN solutions at industry conferences (such as the LoRaWAN Alliance) and co-authored publication in IEEE Sensors.",
+        "Provided key technical documentation and system analysis during the pre-acquisition due diligence by Arm.",
+        "Championed and initiated migration from monolithic PHP to newer technologies (Node.js, newer PHP frameworks, Redis etc) and microservice patterns.",
+        "Designed a complete new version of the company's core APIs, designed to provide an API first approach."
+      ],
+      "startDate": "2015-04",
+      "endDate": "2018-03"
+    },
+    {
+      "name": "Stream Technologies Ltd",
+      "summary": "As Senior Developer, took ownership of key modernization efforts for the core 'OaSys' platform (rebranded to IoT-X). Led the reimplementation of the platform's frontend using modern PHP & JavaScript frameworks and developed some accompanying RESTful APIs. Improved team workflow significantly by selecting and implementing Jira for issue tracking and leading the critical migration from SVN to Git. Developed essential internal tools for Operations, Support, and Finance. Began exploring and designing solutions for Low-Power Radio and integrated satellite network connectivity.",
+      "highlights": [
+        "Led frontend reimplementation (using [e.g., AngularJS]) and REST API development for the core IoT-X platform.",
+        "Managed the company-wide migration from SVN to Git, including establishing workflows and training.",
+        "Implemented Jira for improved task management and workflow visibility across technical teams.",
+        "Built vital internal tools automating tasks for Support, Operations, and Finance teams.",
+        "Contributed to early designs for low-power radio support and integrated satellite backhaul options (e.g., Iridium, Inmarsat)."
+      ],
+      "position": "Senior Developer",
+      "startDate": "2014-04",
+      "endDate": "2015-03"
+    },
+    {
+      "name": "Stream Technologies Ltd",
+      "summary": "Joined as a graduate developer, quickly contributing significant feature enhancements and stability improvements to the company's core monolithic PHP platform, 'OaSys'. Developed the company's very first automated deployment system using simple SVN triggers, a staging environment and scripts, drastically reducing manual deployment effort and risk. Collaborated with various business units (Support, Sales, Finance) to understand needs and build internal tooling solutions. Designed and implemented the initial versions of the platform's external APIs. Gained comprehensive business knowledge through hands-on involvement in operational tasks, including technical support.",
+      "highlights": [
+        "Rapidly delivered features and fixes for the PHP-based OaSys platform (SIM management, billing, UI).",
+        "Built the first automated deployment system (using SVN, and a staging environment and some scripts so we could deploy) cutting deployment times significantly.",
+        "Developed internal tools automating processes for Support, Finance, and Operations.",
+        "Designed and wrote endpoints for the company's first external API for partner/customer use.",
+        "Provided direct technical support, gaining valuable insights into customer needs and business operations."
+      ],
+      "position": "Developer",
+      "startDate": "2012-08",
+      "endDate": "2014-04"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Strathclyde",
+      "studyType": "BSc (Hons)",
+      "area": "Computer Science",
+      "startDate": "2008-09",
+      "endDate": "2012-07",
+      "url": "https://www.strath.ac.uk/courses/undergraduate/computersciencebsc/"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Strategic & Technical Leadership",
+      "keywords": [
+        "Technical Vision & Long-Term Strategy Definition",
+        "Architectural Oversight & Governance",
+        "Infrastructure Modernization & Repatriation Strategy",
+        "Innovation & Emerging Technology Adoption",
+        "Business Alignment & Senior Stakeholder Engagement",
+        "Change Leadership & Organizational Transformation",
+        "Technical Due Diligence & Strategic Assessments",
+        "Driving Cost Optimization Initiatives",
+        "Thought Leadership (Publications, Conference Presentations)"
+      ],
+      "level": "Expert"
+    },
+    {
+      "name": "Engineering Management & Delivery",
+      "keywords": [
+        "Engineering Team Leadership",
+        "People Management (Performance, Growth, Mentorship, 1-on-1s)",
+        "SDLC Optimization & Agile Transformations",
+        "Process Improvement & Engineering Excellence Initiatives",
+        "Developer Experience (DX) & Productivity Enhancement",
+        "Quality Assurance Strategy & Bug Reduction",
+        "CI/CD Philosophy & Tooling Standardization",
+        "Operational Efficiency & Resource Planning",
+        "Compliance Management & Execution (ISO27001)",
+        "Agile Tooling & Best Practices (Jira, Gitflow)"
+      ],
+      "level": "Expert"
+    },
+    {
+      "name": "Cloud, Kubernetes & Infrastructure Engineering",
+      "keywords": [
+        "Kubernetes (Migration, Deployment, Operations)",
+        "Docker & Containerization",
+        "Data Center Operations & Management",
+        "Large Public Cloud (AWS, Microsoft Azure, GCP)",
+        "Smaller Public Cloud (Hetzner, Scaleway, DigitalOcean)",
+        "Private Cloud Platforms (Nutanix, ESXi)",
+        "Infrastructure as Code (Terraform, Ansible, cloud-init)",
+        "CI/CD Pipeline Design & Automation",
+        "Linux System Administration (Linux, FreeBSD)",
+        "Network Engineering (L2/L3 Switching & Routing, DNS, TCP/IP, VPNs)",
+        "Network Firewalls & Security (IPTables, Netfilter, pfSense)",
+        "Network Analysis & Troubleshooting (tcpdump, Wireshark, routing diagnostics)",
+        "Specialized Network Protocols (LoRaWAN)",
+        "Monitoring & Observability (Grafana)",
+        "System Security (SELinux, netfilter)"
+      ],
+      "level": "Expert"
+    },
+    {
+      "name": "Software Architecture & Development",
+      "keywords": [
+        "Microservice Architecture & Design",
+        "API Design & Development (RESTful, API Gateways)",
+        "System Decoupling & Integration Strategy",
+        "PHP (Modernization & Legacy Systems)",
+        "JavaScript (Frontend Frameworks e.g., AngularJS)",
+        "Node.js",
+        "Database Schema Design & Migration",
+        "Git & Advanced Version Control Workflows",
+        "Architecture Decision Records (ADRs)",
+        "Test-Driven Development (TDD)",
+        "Internationalization (i18n) Architecture"
+      ],
+      "level": "Expert"
+    },
+    {
+      "name": "Process Improvement & Engineering Excellence",
+      "keywords": [
+        "Developer Experience (DX) Enhancement",
+        "Code Review Process Optimization",
+        "Pair Programming & Mob Programming Advocacy",
+        "Quality Assurance Strategy",
+        "Bug Reduction & Product Stability Improvement",
+        "Jira & Agile Tooling Implementation",
+        "Automation of Operational Tasks"
+      ],
+      "level": "Expert"
+    },
+    {
+      "name": "AI/Machine Learning",
+      "keywords": [
+        "Deep Learning Fundamentals",
+        "Model Fine-Tuning (Diffusion Models, Large Language Models)",
+        "PyTorch (Experimentation & Prototyping)",
+        "Generative AI Principles (Exploration)",
+        "Staying Abreast of AI/ML Advancements"
+      ],
+      "level": "Foundational"
+    }
+  ],
+  "basics": {
+    "name": "Peter Kinnaird",
+    "summary": "As a Leader in Software Engineering & Infrastructure, I define and drive the technical vision, translating complex business needs into robust and scalable systems. I excel at guiding high-performing teams to architect, deliver, and maintain critical infrastructure and software solutions that meet stringent regulatory requirements and operational demands. My leadership ensures a resilient, efficient, and forward-looking technology foundation that operates within all necessary constraints.\n",
+    "url": "https://kinnaird.scot",
+    "email": "contact@kinnaird.scot",
+    "label": "Leader in Software Engineering & Infrastructure",
+    "location": {
+      "countryCode": "GB",
+      "city": "Glasgow",
+      "region": "Scotland"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "url": "https://github.com/PeteFromGlasgow",
+        "username": "PeteFromGlasgow"
+      }
+    ]
+  },
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Japanese",
+      "fluency": "Intermediate"
+    }
+  ],
+  "publications": [
+    {
+      "publisher": "IEEE Sensors",
+      "name": "Evaluation of LoRa and LoRaWAN for wireless sensor networks",
+      "summary": "Focusing primarily on the implemetation of the LoRaWAN Network Server, I drafted this paper with the help of some other members of the Stream Technologies team. The paper focuses",
+      "url": "https://ieeexplore.ieee.org/document/7808712",
+      "releaseDate": "2016-10-30"
+    },
+    {
+      "publisher": "US Patent 11197161",
+      "name": "System and method for connectivity management",
+      "summary": "Patent protecting the specific process for connectivity management used in the now supercedes OaSys platform.",
+      "releaseDate": "2021-12-07"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Outdoor Activities",
+      "keywords": [
+        "Hiking",
+        "Paddleboarding",
+        "Kayaking"
+      ]
+    },
+    {
+      "name": "Design & 3D Printing",
+      "keywords": [
+        "3D Printing",
+        "Autodesk Fusion 360",
+        "Klipper"
+      ]
+    },
+    {
+      "name": "Electronics & DIY",
+      "keywords": [
+        "Home Assistant",
+        "ESP32 Development",
+        "Arduino",
+        "Circuit Design"
+      ]
+    },
+    {
+      "name": "Homelab",
+      "keywords": [
+        "Server Administration",
+        "Virtualization",
+        "Network Configuration",
+        "Self-Hosted Services"
+      ]
+    }
+  ]
+}
