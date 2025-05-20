@@ -12,7 +12,7 @@ const outputJsonPath = path.join(rootDir, 'src/resume.json')
 // Define custom tag for include
 const includeTag = {
   tag: '!include',
-  resolve(str) {
+  resolve(str: string) {
     const filePath = path.join(assetsDir, str)
     const content = fs.readFileSync(filePath, 'utf8')
     // Parse with the same custom tags for nested includes

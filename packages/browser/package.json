@@ -1,5 +1,5 @@
 {
-  "name": "@petefromglasgow/personal-website-frontend",
+  "name": "@petefromglasgow/personal-website-browser",
   "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
