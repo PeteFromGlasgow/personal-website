@@ -5,14 +5,13 @@ on:
     branches:
       - main
       - master
+    tags:
+      - 'v*.*.*'
     paths:
       - 'package.json'
       - 'packages/frontend/**'
       - 'packages/resume/**'
       - '.github/workflows/frontend-docker-build.yml'
-  push:
-    tags:
-      - 'v*.*.*'
   pull_request:
     branches:
       - main
