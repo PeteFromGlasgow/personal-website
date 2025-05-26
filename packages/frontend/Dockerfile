@@ -10,10 +10,6 @@ RUN pnpm install --frozen-lockfile
 
 FROM base AS builder
 WORKDIR /app
-COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
-COPY packages/frontend/package.json ./packages/frontend/
-COPY packages/resume/package.json ./packages/resume/
-COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 RUN pnpm install --frozen-lockfile
 RUN pnpm --filter=@petefromglasgow/personal-website-frontend build
