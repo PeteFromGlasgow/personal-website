@@ -1,6 +1,6 @@
 {
   "name": "@petefromglasgow/personal-website-resume",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.js",
   "type": "module",
