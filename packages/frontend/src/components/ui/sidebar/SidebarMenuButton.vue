@@ -5,7 +5,7 @@ import SidebarMenuButtonChild, { type SidebarMenuButtonProps } from './SidebarMe
 import { useSidebar } from './utils'
 
 defineOptions({
-  inheritAttrs: false,
+  inheritAttrs: false
 })
 
 const props = withDefaults(defineProps<SidebarMenuButtonProps & {
@@ -14,18 +14,22 @@ const props = withDefaults(defineProps<SidebarMenuButtonProps & {
   as: 'button',
   variant: 'default',
   size: 'default',
+  tooltip: undefined
 })
 
 const { isMobile, state } = useSidebar()
 
 const delegatedProps = computed(() => {
-  const { tooltip, ...delegated } = props
+  const { tooltip: _, ...delegated } = props
   return delegated
 })
 </script>
 
 <template>
-  <SidebarMenuButtonChild v-if="!tooltip" v-bind="{ ...delegatedProps, ...$attrs }">
+  <SidebarMenuButtonChild
+    v-if="!tooltip"
+    v-bind="{ ...delegatedProps, ...$attrs }"
+  >
     <slot />
   </SidebarMenuButtonChild>
 
@@ -43,7 +47,10 @@ const delegatedProps = computed(() => {
       <template v-if="typeof tooltip === 'string'">
         {{ tooltip }}
       </template>
-      <component :is="tooltip" v-else />
+      <component
+        :is="tooltip"
+        v-else
+      />
     </TooltipContent>
   </Tooltip>
 </template>

@@ -11,8 +11,8 @@ export default defineConfig({
     sourcemap: true,
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'TypescriptCliTemplate',
-      fileName: 'typescript-cli-template'
+      name: '@petefromglasgow/personal-website-browser',
+      fileName: 'personal-website-browser'
     },
 
     // We're not using any external dependencies, but these options are important for these

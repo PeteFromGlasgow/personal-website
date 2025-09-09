@@ -5,11 +5,12 @@ import { reactiveOmit } from '@vueuse/core'
 import { TooltipArrow, TooltipContent, type TooltipContentEmits, type TooltipContentProps, TooltipPortal, useForwardPropsEmits } from 'reka-ui'
 
 defineOptions({
-  inheritAttrs: false,
+  inheritAttrs: false
 })
 
 const props = withDefaults(defineProps<TooltipContentProps & { class?: HTMLAttributes['class'] }>(), {
   sideOffset: 4,
+  class: ''
 })
 
 const emits = defineEmits<TooltipContentEmits>()

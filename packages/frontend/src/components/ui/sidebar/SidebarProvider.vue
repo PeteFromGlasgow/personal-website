@@ -12,6 +12,7 @@ const props = withDefaults(defineProps<{
 }>(), {
   defaultOpen: true,
   open: undefined,
+  class: ''
 })
 
 const emits = defineEmits<{
@@ -23,7 +24,7 @@ const openMobile = ref(false)
 
 const open = useVModel(props, 'open', emits, {
   defaultValue: props.defaultOpen ?? false,
-  passive: (props.open === undefined) as false,
+  passive: (props.open === undefined) as false
 }) as Ref<boolean>
 
 function setOpen(value: boolean) {
@@ -60,7 +61,7 @@ provideSidebarContext({
   isMobile,
   openMobile,
   setOpenMobile,
-  toggleSidebar,
+  toggleSidebar
 })
 </script>
 

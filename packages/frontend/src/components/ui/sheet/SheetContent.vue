@@ -9,7 +9,7 @@ import {
   type DialogContentEmits,
   type DialogContentProps,
   DialogPortal,
-  useForwardPropsEmits,
+  useForwardPropsEmits
 } from 'reka-ui'
 import SheetOverlay from './SheetOverlay.vue'
 
@@ -19,11 +19,12 @@ interface SheetContentProps extends DialogContentProps {
 }
 
 defineOptions({
-  inheritAttrs: false,
+  inheritAttrs: false
 })
 
 const props = withDefaults(defineProps<SheetContentProps>(), {
   side: 'right',
+  class: ''
 })
 const emits = defineEmits<DialogContentEmits>()
 

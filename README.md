@@ -1,21 +1,17 @@
-# Typescript CLI Base
+# Personal Website
 
-This is a powerful, multi package Typescript project base which has examples for a CLI, Browser and library.
+This is a multi-package Typescript project for my personal website.
 
 ## Features
 
-*   📦 **Multi-package Monorepo:** Uses `pnpm` workspaces to manage `core` library, `cli`, and `browser` packages.
-*   📚 **Core Library Example:** Demonstrates a reusable TypeScript library (`packages/core`).
-*   💻 **CLI Application Example:** Includes a command-line interface built with TypeScript (`packages/cli`).
-*   🌐 **Browser Script Example:** Shows how to bundle TypeScript for use in a web browser (`packages/browser`).
-*   🧪 **Unit Testing:** Integrated unit testing setup with examples using Vitest across all packages.
+*   📦 **Multi-package Monorepo:** Uses `pnpm` workspaces to manage the different parts of the project.
+*   🚀 **Frontend:** A modern, fast, and content-focused website built with Astro, Vue, and Tailwind CSS.
+*   📄 **Resume Data:** A dedicated package to manage my resume data in a structured format.
+*   🧪 **Unit Testing:** Integrated unit testing setup with examples using Vitest.
 *   💅 **Linting & Style:** Consistent code style enforced by ESLint & Stylistic.
-*   🐳 **Docker Support:** Dockerfile provided for building the CLI application (`packages/cli/Dockerfile`).
 *   훅 **Git Hooks:** Pre-commit hooks configured using Husky to ensure code quality before commits.
 *   ⚙️ **Editor Configuration:** Includes a `.editorconfig` file for consistent editor settings.
 *   ✨ **Automated Versioning & Changelogs:** Uses Changesets for streamlined package versioning and changelog generation.
-*   🚀 **CI/CD:** GitHub Actions workflows for automated testing, building, and releasing.
-*   🛡️ **Vulnerability Scanning:** Uses Trivy in CI to scan project dependencies (`pnpm-lock.yaml`) and the CLI Docker image for known vulnerabilities.
 *   📖 **Documentation Site:** Uses VitePress for generating documentation, deployed via GitHub Actions.
 *   🔒 **Security Policy:** Includes a `SECURITY.md` file outlining how to report vulnerabilities.
 *   🤝 **Code of Conduct:** Includes a `CODE_OF_CONDUCT.md` to foster an inclusive community.
@@ -36,7 +32,7 @@ pnpm install -r
 
 ### Building
 
-To build all packages (`core`, `cli`, `browser`):
+To build all packages:
 
 ```bash
 pnpm build
@@ -48,7 +44,7 @@ This command runs the `build` script defined in the `package.json` of each indiv
 
 There are separate commands for running tests:
 
-*   **Run tests for `core` and `cli` packages:**
+*   **Run tests for all packages:**
 
     ```bash
     pnpm test
@@ -93,4 +89,3 @@ This project uses [Changesets](https://github.com/changesets/changesets) to mana
     pnpm release
     ```
     This script typically runs `pnpm build` first, then publishes the packages using `pnpm publish -r`. *Note: The `--no-git-checks` flag is used here, be mindful of your release workflow.*
-

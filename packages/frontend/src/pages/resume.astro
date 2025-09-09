@@ -1,39 +1,37 @@
 ---
-import '../styles/global.css';
+import '../styles/global.css'
 import Navigation from '@/components/Navigation.vue'
 import { Image } from 'astro:assets'
-import { Button } from '@/components/ui/button'
-import me from 'src/assets/me.jpg'
 import { resume } from '@petefromglasgow/personal-website-resume'
 import Resume from '@/components/Resume.vue'
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Kinnaird.scot</title>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Kinnaird.scot</title>
+  </head>
 
-	<body>
-		<div class="flex flex-row h-screen">
-			<div class="h-screen flex-none">
-				<Navigation client:load>
-					<Image slot="logo" class="w-6 max-h-6 rounded-md object-contain flex-shrink-0" width="40" height="40" src="https://gravatar.com/avatar/af209d37d6bc17d6e3f3b2210f3e24da96afcd2eb3617a315eea641e9e9cc09c" alt="Peter Kinnaird Logo" loading="eager"/>
-				</Navigation>
-			</div>
-			<div class="flex flex-col w-full">
-				<div class="flex-1 w-1/4">&nbsp;</div>
-				<div class="flex flex-row flex-none h-full">
-					<div class="hidden md:flex flex-none w-1/4">&nbsp;</div>
-					<div class="flex-none w-full md:w-1/2">
-						<Resume contents={resume} />
-					</div>
-				</div>
-				<div class="flex-1 w-1/4">&nbsp;</div>
-			</div>
-		</div>
-	</body>
+  <body>
+    <div class="flex flex-row h-screen">
+      <div class="h-screen flex-none">
+        <Navigation client:load>
+          <Image slot="logo" class="w-6 max-h-6 rounded-md object-contain flex-shrink-0" width="40" height="40" src="https://gravatar.com/avatar/af209d37d6bc17d6e3f3b2210f3e24da96afcd2eb3617a315eea641e9e9cc09c" alt="Peter Kinnaird Logo" loading="eager" />
+        </Navigation>
+      </div>
+      <div class="flex flex-col w-full">
+        <div class="flex-1 w-1/4">&nbsp;</div>
+        <div class="flex flex-row flex-none h-full">
+          <div class="hidden md:flex flex-none w-1/4">&nbsp;</div>
+          <div class="flex-none w-full md:w-1/2">
+            <Resume contents={resume} />
+          </div>
+        </div>
+        <div class="flex-1 w-1/4">&nbsp;</div>
+      </div>
+    </div>
+  </body>
 </html>
